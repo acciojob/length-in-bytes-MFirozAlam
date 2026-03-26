@@ -1,6 +1,5 @@
 const byteSize = (str) => {
-  let bytes = new TextEncoder().encode(str).length;
-  alert(bytes);  
+  return new Blob([str]).size;  
 };
 
 // Do not change the code below
